@@ -9,6 +9,7 @@ import { LeagueComponent } from './league/league.component';
 import { MarketComponent } from './market/market.component';
 import { TeamComponent } from './team/team.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     HeaderComponent,
     LeagueComponent,
     MarketComponent,
-    TeamComponent
+    TeamComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

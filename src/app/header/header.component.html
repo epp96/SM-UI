@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="#" class="navbar-brand">Brand</a>
+    <div class="navbar-header" >
+      <a routerLinkActive="active" routerLink="/league" class="navbar-brand">Brand</a>
     </div>
 
     <div class="navbar-default"> <!--collapse navbar-collapse-->
@@ -13,16 +13,19 @@
         <li routerLinkActive="active"><a routerLink="/market">market</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><a>Money</a></li>
+        <li><a>Notifications</a></li>
+        <li><a>Profile</a></li>
         <li class="dropdown" appDropdown>
-          <a style="cursor: pointer;" class="dropdown-toggle" role="button">
-            <i class="material-icons">more_vert</i>
-          </a>
+          <a style="cursor: pointer;" class="dropdown-toggle" role="button">Extra<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a style="cursor: pointer;">Settings</a></li>
             <li><a style="cursor: pointer;">Credits</a></li>
             <li disabled><a style="cursor: pointer;">log out</a></li>
           </ul>
         </li>
+
+
       </ul>
     </div>
 
