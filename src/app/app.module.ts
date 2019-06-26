@@ -10,6 +10,9 @@ import { MarketComponent } from './market/market.component';
 import { TeamComponent } from './team/team.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { LeagueModule } from './league/league.modules';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +20,16 @@ import { DropdownDirective } from './shared/dropdown.directive';
     NavComponent,
     RootComponent,
     HeaderComponent,
-    LeagueComponent,
+    // LeagueComponent,
     MarketComponent,
     TeamComponent,
     DropdownDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LeagueModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
